@@ -63,29 +63,27 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
-
 body {
-	margin: 15px 180px 15px 180px;
+	margin: 3% 12% 3% 12%; 
 	text-align: center;
 	line-height: 1.5;
 }
+
 .navigation {
 	display: flex;
-	text-decoration: none;
 	flex-direction: row;
-	justify-content: space-between;
-
+	justify-content: space-evenly;
+	flex-wrap: nowrap;
+	text-decoration: none;
 }
 
-/* .navigation .box {
+.nav_tabs {
 	display: flex;
-	position: relative;
-	border-style: solid;
-	border-color: black;
-	color: gray;
-	text-decoration: none;
-} */
+	flex: 1;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
 
 .navigation a{
 	padding-top: 10px;
@@ -94,25 +92,23 @@ body {
 }
 
 .slogan-container {
-	/* display: inline-block;
-	text-align: center;
-	margin: 30px;
-	padding: 20px; */
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
-	margin: 20px;
+	margin-bottom: 20px;
+	line-height: 1.3;
 }
 
 .slogan-box h1 {
 	font-size: 60px;
-	padding: 10px;
+	margin-top: 10px;
 }
 
 .picture-box img{
 	width: 300px;
 	height: 300px;
 }
+
 /* get started button */
 .slogan-container .slogan-box a {
 	text-decoration: solid;
@@ -125,25 +121,16 @@ body {
 	color: black;
 }
 
-
 .paragraphs-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	text-align: left;
-	/* margin-top: 20px;
-	margin-bottom: 20px;
-	border: solid; */
-	/* margin-right: 30px; */
-	/* width: 414px;
-	margin: 15px 15px 15px 0px;
-	text-align: left; */
 }
 
 .paragraphs-container .box {
 	margin: 25px 25px 25px 0px;
 	padding-right: 15px;
-
 }
 
 .middle-img {
@@ -172,7 +159,9 @@ body {
 }
 
 
-/* Service Page */
+/* 
+*****SERVICE PAGE*****
+*/
 .service-box {
 	text-align: left; 
 	margin: 20px 15px 20px 0px;
@@ -202,7 +191,6 @@ body {
 	margin: 1% 0% 1% 0%;
 	padding: 25px;
 	text-align:  left;
-
 }
 
 /* learn more button */
@@ -249,7 +237,9 @@ footer {
 	margin: 5%;
 }
 
-/* About page */
+/* 
+*****ABOUT PAGE*****
+*/
 
 .about-header-img {
 	width: 100%;
@@ -280,9 +270,6 @@ footer {
 	padding: 20px;
 }
 
-.hierarchy-container .secretary {
-	/* margin-left:1%; */
-}
 .hierarchy-container .co-pet {
 	width: 60%;
 	padding: 10%;
@@ -292,4 +279,53 @@ footer {
 .cat-img {
 	width: 215px;
 	height: 215px;
+}
+
+/* 
+*****Media Tags*****
+*/
+
+
+/* Table view */
+@media (max-width: 800px){
+	.picture-box {
+		visibility: collapse;
+	}
+	.slogan-container {
+		justify-content: center;
+	}
+	.navigation {
+		display: flex;
+		flex-direction: column-reverse;
+		margin-bottom: 2%;
+	}
+	.navigation .nav_tabs {
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+	}
+	.container .box {
+		width: auto;
+	}
+}
+/* Mobile view */
+@media (max-width: 500px){
+	.navigation .nav_tabs {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	/* QUESTION */
+	.navigation .nav_tabs a, .nav_logo {
+		border-bottom-style: solid;
+		border-bottom-width: thin;
+	}
+	.paragraphs-container, .three-box-container {
+		display: flex;
+		flex-direction: column;
+	}
 }
