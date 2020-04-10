@@ -1,3 +1,331 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+body {
+	margin: 3% 12% 3% 12%; 
+	text-align: center;
+	line-height: 1.5;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: nowrap;
+	text-decoration: none;
+}
+
+.nav_tabs {
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
 
 
+.navigation a{
+	padding-top: 10px;
+	text-decoration: none;
+	color: gray;
+}
+
+.slogan-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-bottom: 20px;
+	line-height: 1.3;
+}
+
+.slogan-box h1 {
+	font-size: 60px;
+	margin-top: 10px;
+}
+
+.picture-box img{
+	width: 300px;
+	height: 300px;
+}
+
+/* get started button */
+.slogan-container .slogan-box a {
+	text-decoration: solid;
+	border: solid;
+	border-color: black;
+	border-width: 1px;
+	border-radius: 3px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: black;
+}
+
+.paragraphs-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: left;
+}
+
+.paragraphs-container .box {
+	margin: 25px 25px 25px 0px;
+	padding-right: 15px;
+}
+
+.middle-img {
+	display: block;
+	margin: auto;
+	width: 100%;
+}
+
+.three-box-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: left;
+}
+
+.three-box-container .box {
+	margin: 25px 25px 25px 0px;
+	padding-right: 15px;
+}
+
+.address-container{
+	display: flex;
+	flex-direction: row;
+	text-align: left;
+	margin: 15px 15px 15px 0px;
+}
+
+
+/* 
+*****SERVICE PAGE*****
+*/
+.service-box {
+	text-align: left; 
+	margin: 20px 15px 20px 0px;
+}
+
+.service-box h1 {
+	font-size: 30px;
+}
+
+.services-header-img {
+	width: 100%;
+	margin: 15px 0px 15px 0px;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.container .box {
+	width: 48%;
+	border: solid;
+	border-width: 2px;
+	background-color: rgb(240, 240, 240);
+	margin: 1% 0% 1% 0%;
+	padding: 25px;
+	text-align:  left;
+}
+
+/* learn more button */
+.container .box a{
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 2px;
+	background-color: white;
+	text-decoration: none;
+	margin: 5% 5% 5% 0%;
+	padding: 5px 10px 5px 10px;
+}
+
+.facts-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 5% 0% 5% 0%;
+}
+
+.facts-container .box {
+	width: 48%;
+	text-align: left;
+	margin: 1% 0% 1% 0%;
+}
+
+.facts-container .img-box {
+	text-align: center;
+}
+
+.facts-container .facts-box {
+	padding: 25px 25px 25px 0px;
+}
+
+.services-info-img {
+	width: 100%;
+}
+
+.facts-container .facts-box ul {
+	list-style: square;
+	padding-left: 4%;
+}
+footer {
+	margin: 5%;
+}
+
+/* 
+*****ABOUT PAGE*****
+*/
+
+.about-header-img {
+	width: 100%;
+	height: 35%;
+	align-content: center;
+	margin: 15px 0px 15px 0px;
+}
+
+.about-box {
+	text-align: left;
+	margin: 20px 15px 20px 0px;
+}
+.about-box h1 {
+	font-size: 30px;
+}
+
+.hierarchy-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.hierarchy-container .box {
+	width: 45%;
+	/* border: solid; */
+	margin: 5px 5px 5px 0px;
+	padding: 20px;
+}
+
+.hierarchy-container .co-pet {
+	width: 60%;
+	padding: 10%;
+}
+
+/* adjusted cat img */
+.cat-img {
+	width: 215px;
+	height: 215px;
+}
+
+/* 
+*****Media Tags*****
+*/
+
+
+/* Table view */
+@media (max-width: 800px){
+	.picture-box {
+		visibility: collapse;
+	}
+	.slogan-container {
+		justify-content: center;
+	}
+	.navigation {
+		display: flex;
+		flex-direction: column-reverse;
+		margin-bottom: 2%;
+	}
+	.navigation .nav_tabs {
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+	}
+	.container .box {
+		width: auto;
+	}
+}
+/* Mobile view */
+@media (max-width: 500px){
+	.navigation .nav_tabs {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	/* QUESTION */
+	.navigation .nav_tabs a, .nav_logo {
+		border-bottom-style: solid;
+		border-bottom-width: thin;
+	}
+	.paragraphs-container, .three-box-container {
+		display: flex;
+		flex-direction: column;
+	}
+}
